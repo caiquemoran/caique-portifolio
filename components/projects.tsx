@@ -14,7 +14,7 @@ export default function Projects({ idioma }: ProjectsProps) {
     }
     
     return (
-        <section className="section !pl-[10%] flex flex-col items-start" id="projects">
+        <section className="section flex flex-col items-center text-center" id="projects">
             <div className="w-full max-w-4xl pt-10">
                 <h2 className="text-6xl md:text-4xl font-bold text-[var(--foreground)] mb-2 tracking-tight">{textos[idioma].titulo}</h2>
             </div>
