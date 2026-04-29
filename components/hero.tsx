@@ -72,7 +72,7 @@ export default function Hero({ idioma = "pt" }: HeroProps) {
                             ? "CAIQUE_MORAN_CV.pdf"
                             : "CAIQUE_MORAN_CV_EN.pdf"
                     }
-                    className="mt-6 px-8 py-4 bg-zinc-900 text-white dark:bg-white/10 dark:text-white border border-zinc-800 dark:border-white/10 font-bold rounded-full hover:bg-zinc-800 dark:hover:bg-white/20 transition-all text-lg shadow-sm"
+                    className="mt-6 px-8 py-4 bg-[var(--foreground)] text-[var(--background)] font-bold rounded-full hover:opacity-80 transition-opacity text-lg"
                 >
                     {textos[idioma].botao}
                 </a>
