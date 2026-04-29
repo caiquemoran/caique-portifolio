@@ -60,8 +60,8 @@ export default function Hero({idioma = "pt"}: HeroProps) {
                 </div>
 
                 <a 
-                    href={idioma === "pt" ? "/CV_PT_Caique_Moran.pdf" : "/CV_EN_Caique_Moran.pdf"}
-                    download={idioma === "pt" ? "CV_PT_Caique_Moran.pdf" : "CV_EN_Caique_Moran.pdf"}
+                    href={idioma === "pt" ? "/CAIQUE_MORAN_CV.pdf" : "/CAIQUE_MORAN_CV_EN.pdf"}
+                    download={idioma === "pt" ? "CAIQUE_MORAN_CV.pdf" : "CAIQUE_MORAN_CV_EN.pdf"}
                     className="mt-6 px-8 py-4 bg-[var(--foreground)] text-[var(--background)] font-bold rounded-full hover:opacity-80 transition-opacity text-lg"
                 >
                     {textos[idioma].botao}
