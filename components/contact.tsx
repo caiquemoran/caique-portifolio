@@ -23,8 +23,8 @@ const contatos = [
     {
         icone: FaGithub,
         titulo: { pt: "GitHub", en: "GitHub" },
-        dado: "Fockas",
-        link: "https://github.com/Fockas",
+        dado: "caiquemoran",
+        link: "https://github.com/caiquemoran",
         corHover: "hover:bg-zinc-500/10 hover:border-zinc-500/50 dark:hover:bg-zinc-400/10"
     }
 ];
