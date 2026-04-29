@@ -11,7 +11,10 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
     // const [theme, setTheme] = useState<"light" | "dark">("light");
     const [activeSection, setActiveSection] = useState("");
 
-    /* useEffect(() => {
+    useEffect(() => {
+        // Força o tema escuro (background preto) ao iniciar
+        document.documentElement.classList.add("dark");
+        /*
         const savedTheme = localStorage.getItem("theme");
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
@@ -21,9 +24,11 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
             setTheme("light");
             document.documentElement.classList.remove("dark");
         }
-    }, []); */
+        */
+    }, []);
 
-    /* const toggleTheme = () => {
+    /*
+    const toggleTheme = () => {
         const newTheme = theme === "light" ? "dark" : "light";
         setTheme(newTheme);
         if (newTheme === "dark") {
@@ -32,7 +37,8 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
             document.documentElement.classList.remove("dark");
         }
         localStorage.setItem("theme", newTheme);
-    }; */
+    };
+    */
 
     useEffect(() => {
         const handleScroll = () => {
@@ -105,9 +111,11 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
                 <button className="cursor-pointer" onClick={() => setIdioma(idioma === "pt" ? "en" : "pt")}>
                     {idioma === "pt" ? "EN" : "PT"}
                 </button>
-                {/* <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
+                {/* 
+                <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle Theme">
                     {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
-                </button> */}
+                </button>
+                */}
             </div>
         </nav>
     )
