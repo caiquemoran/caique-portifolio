@@ -24,9 +24,14 @@ export default function Projects({ idioma }: ProjectsProps) {
                     titulo: "Gerador de QR Code",
                     tecnologias: ["Java", "Spring Boot", "Docker"],
                     imagem: "",
-                    repositorio: "https://github.com/Fockas/QRCodeGerator",
+                    repositorio: "https://github.com/caiquemoran/QRCodeGerator",
                 },
- 
+                {
+                    titulo: "Meu Portifolio",
+                    tecnologias: ["Next.JS", "React", "TypeScript", "Tailwind"],
+                    imagem: "/portifolio.jpg",
+                    repositorio: "https://github.com/caiquemoran/caique-portifolio",
+                },
             ]
         },
         en: {
@@ -39,7 +44,13 @@ export default function Projects({ idioma }: ProjectsProps) {
                     titulo: "QR Code Generator",
                     tecnologias: ["Java", "Spring Boot", "Docker"],
                     imagem: "",
-                    repositorio: "https://github.com/Fockas/QRCodeGerator",
+                    repositorio: "https://github.com/caiquemoran/QRCodeGerator",
+                },
+                {
+                    titulo: "My Portifolio",
+                    tecnologias: ["Next.JS", "React", "TypeScript", "Tailwind"],
+                    imagem: "/portifolio.jpg",
+                    repositorio: "https://github.com/caiquemoran/caique-portifolio",
                 },
             ]
         }
