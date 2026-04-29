@@ -10,6 +10,7 @@ import Education from "@/components/education";
 import About from "@/components/about";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
+import Language from "@/components/language";
 
 export default function Home() {
   const [idioma, setIdioma] = useState<"pt" | "en">("pt")
@@ -21,6 +22,7 @@ export default function Home() {
       <Experience idioma={idioma} />
       <Tecnologies idioma={idioma} />
       <Education idioma={idioma} />
+      <Language idioma={idioma}/>
       <About idioma={idioma} />
       <Contact idioma={idioma} />
       <Footer idioma={idioma}/>

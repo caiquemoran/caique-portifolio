@@ -71,6 +71,7 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
             experiencia: "Experiência",
             tecnologias: "Tecnologias",
             educacao: "Educação",
+            linguagem: "Idiomas",
             sobre: "Sobre mim",
             contato: "Contato"
         },
@@ -80,6 +81,7 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
             experiencia: "Experience",
             tecnologias: "Technologies",
             educacao: "Education",
+            linguagem: "Languages",
             sobre: "About me",
             contato: "Contact"
         }
@@ -95,6 +97,7 @@ export default function Navbar({idioma, setIdioma}: NavbarProps) {
                 <a href="#experience" className={activeSection === "experience" ? "active" : ""}>{textos[idioma].experiencia}</a>
                 <a href="#tecnologies" className={activeSection === "tecnologies" ? "active" : ""}>{textos[idioma].tecnologias}</a>
                 <a href="#education" className={activeSection === "education" ? "active" : ""}>{textos[idioma].educacao}</a>
+                <a href="#language" className={activeSection === "language" ? "active" : ""}>{textos[idioma].linguagem}</a>
                 <a href="#about" className={activeSection === "about" ? "active" : ""}>{textos[idioma].sobre}</a>
                 <a href="#contact" className={activeSection === "contact" ? "active" : ""}>{textos[idioma].contato}</a>
             </div>
