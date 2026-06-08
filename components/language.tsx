@@ -36,10 +36,10 @@ export default function Language({ idioma }: languageProps){
                         <div key={index} className="w-full group">
                             <div className="flex justify-between items-end mb-2 px-1">
                                 <h3 className="text-xl font-semibold text-[var(--foreground)] tracking-tight">{item.nome}</h3>
-                                <span className="text-sm font-medium text-gray-500 dark:text-gray-200">{item.nivel}</span>
+                                <span className="text-sm font-medium text-gray-200">{item.nivel}</span>
                             </div>
                             
-                            <div className="w-full bg-gray-200 dark:bg-[#1a1a1a] rounded-full h-3 md:h-4 overflow-hidden relative shadow-inner">
+                            <div className="w-full bg-[#1a1a1a] rounded-full h-3 md:h-4 overflow-hidden relative shadow-inner">
                                 <div 
                                     className="h-full rounded-full transition-all duration-[1500ms] ease-out bg-gradient-to-r bg-white relative group-hover:brightness-110"
                                     style={{ width: `${item.porcentagem}%` }}

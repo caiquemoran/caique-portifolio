@@ -100,9 +100,9 @@ export default function Projects({ idioma }: ProjectsProps) {
                         {textos[idioma].projetos.map((projeto, index) => (
                             <div 
                                 key={index} 
-                                className="flex-shrink-0 w-[85vw] md:w-[calc(50%-2rem)] lg:w-[calc(50%-3rem)] max-w-[800px] bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden snap-center flex flex-col text-left hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2"
+                                className="flex-shrink-0 w-[85vw] md:w-[calc(50%-2rem)] lg:w-[calc(50%-3rem)] max-w-[800px] bg-[#111111] border border-gray-800 rounded-3xl overflow-hidden snap-center flex flex-col text-left hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2"
                             >
-                                <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-200 dark:bg-gray-800 relative overflow-hidden flex items-center justify-center">
+                                <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-800 relative overflow-hidden flex items-center justify-center">
                                     {projeto.imagem ? (
                                         <Image 
                                             src={projeto.imagem} 
@@ -111,7 +111,7 @@ export default function Projects({ idioma }: ProjectsProps) {
                                             className="object-cover group-hover:scale-105 transition-transform duration-500"
                                         />
                                     ) : (
-                                        <span className="text-gray-400 dark:text-gray-500 font-medium text-lg">Sem Imagem</span>
+                                        <span className="text-gray-500 font-medium text-lg">Sem Imagem</span>
                                     )}
                                 </div>
                                 
@@ -123,7 +123,7 @@ export default function Projects({ idioma }: ProjectsProps) {
                                             const techData = getTechData(tech);
                                             
                                             return (
-                                                <span key={i} className="flex items-center gap-2 text-sm font-semibold bg-gray-100 dark:bg-[#222222] text-gray-700 dark:text-gray-300 px-4 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 hover:scale-105 transition-transform">
+                                                <span key={i} className="flex items-center gap-2 text-sm font-semibold bg-[#222222] text-gray-300 px-4 py-1.5 rounded-full border border-gray-700 hover:scale-105 transition-transform">
                                                     {techData && (
                                                         techData.imagem ? (
                                                             <div className="relative w-4 h-4 flex-shrink-0" style={{ transform: techData.escala ? `scale(${techData.escala})` : 'none' }}>
@@ -143,7 +143,7 @@ export default function Projects({ idioma }: ProjectsProps) {
                                         href={projeto.repositorio} 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
-                                        className="mt-auto inline-flex items-center gap-2 text-black dark:text-white font-bold text-lg hover:underline group/link w-fit opacity-90 hover:opacity-100 transition-opacity"
+                                        className="mt-auto inline-flex items-center gap-2 text-white font-bold text-lg hover:underline group/link w-fit opacity-90 hover:opacity-100 transition-opacity"
                                     >
                                         <FaGithub size={24} className="group-hover/link:-translate-y-1 group-hover/link:translate-x-1 transition-transform" />
                                         {textos[idioma].repositorio}
