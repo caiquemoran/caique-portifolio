@@ -23,8 +23,14 @@ export default function Projects({ idioma }: ProjectsProps) {
                 {
                     titulo: "Gerador de QR Code",
                     tecnologias: ["Java", "Spring Boot", "Docker"],
-                    imagem: "",
+                    imagem: "/qrcode_for_project.png",
                     repositorio: "https://github.com/caiquemoran/QRCodeGerator",
+                },
+                {
+                    titulo: "Interface Gráfica Python",
+                    tecnologias: ["Python"],
+                    imagem: "/interface_grafica.jpg",
+                    repositorio: "https://github.com/caiquemoran/interface_grafica_python",
                 },
                 {
                     titulo: "Meu Portifolio",
@@ -43,8 +49,14 @@ export default function Projects({ idioma }: ProjectsProps) {
                 {
                     titulo: "QR Code Generator",
                     tecnologias: ["Java", "Spring Boot", "Docker"],
-                    imagem: "",
+                    imagem: "/qrcode_for_project.png",
                     repositorio: "https://github.com/caiquemoran/QRCodeGerator",
+                },
+                {
+                    titulo: "Graphical User Interface Python",
+                    tecnologias: ["Python"],
+                    imagem: "/interface_grafica.jpg",
+                    repositorio: "https://github.com/caiquemoran/interface_grafica_python",
                 },
                 {
                     titulo: "My Portifolio",
@@ -102,13 +114,13 @@ export default function Projects({ idioma }: ProjectsProps) {
                                 key={index} 
                                 className="flex-shrink-0 w-[85vw] md:w-[calc(50%-2rem)] lg:w-[calc(50%-3rem)] max-w-[800px] bg-white dark:bg-[#111111] border border-gray-200 dark:border-gray-800 rounded-3xl overflow-hidden snap-center flex flex-col text-left hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2"
                             >
-                                <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-200 dark:bg-gray-800 relative overflow-hidden flex items-center justify-center">
+                                <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-100 dark:bg-[#181818] relative overflow-hidden flex items-center justify-center">
                                     {projeto.imagem ? (
                                         <Image 
                                             src={projeto.imagem} 
                                             alt={`Imagem do ${projeto.titulo}`} 
                                             fill
-                                            className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                            className={`${projeto.imagem.toLowerCase().includes('qrcode') ? 'object-contain p-6 md:p-10' : 'object-cover'} group-hover:scale-105 transition-transform duration-500`}
                                         />
                                     ) : (
                                         <span className="text-gray-400 dark:text-gray-500 font-medium text-lg">Sem Imagem</span>

@@ -13,12 +13,12 @@ interface EducationItem {
 
 const educationItems: EducationItem[] = [
     {
-        imagem: "/certificados/certificado_advpl.jpg",
-        titulo: { pt: "Programando em ADVPL - Aprenda do Zero", en: "Programming in ADVPL - Learn from Scratch" },
-        subtitulo: { pt: "Udemy", en: "Udemy" },
+        imagem: "/certificados/certificado_python.jpg",
+        titulo: { pt: "Linguagem de Programação Python", en: "Programming Language Python" },
+        subtitulo: { pt: "Fundação Bradesco", en: "Fundação Bradesco" },
         descricao: {
-            pt: "Desenvolvimento na linguagem ADVPL com foco em lógica de programação, estruturação de sistemas e aplicações voltadas para ambientes ERP.",
-            en: "Development using the ADVPL language, focusing on programming logic, system structuring, and applications for ERP environments.",
+            pt: "Desenvolvimento na linguagem Python com foco em lógica de programação, estruturação de sistemas e aplicações.",
+            en: "Development using the Python language, focusing on programming logic, system structuring, and applications.",
         },
     },
     {
@@ -37,6 +37,15 @@ const educationItems: EducationItem[] = [
         descricao: {
             pt: "Conceitos essenciais de Linux, incluindo comandos, gerenciamento de sistema e fundamentos necessários para atuação em ambientes de servidores.",
             en: "Essential Linux concepts, including command-line usage, system management, and core knowledge for working in server environments.",
+        },
+    },
+    {
+        imagem: "/certificados/certificado_advpl.jpg",
+        titulo: { pt: "Programando em ADVPL - Aprenda do Zero", en: "Programming in ADVPL - Learn from Scratch" },
+        subtitulo: { pt: "Udemy", en: "Udemy" },
+        descricao: {
+            pt: "Desenvolvimento na linguagem ADVPL com foco em lógica de programação, estruturação de sistemas e aplicações voltadas para ambientes ERP.",
+            en: "Development using the ADVPL language, focusing on programming logic, system structuring, and applications for ERP environments.",
         },
     },
 ];
@@ -111,15 +120,15 @@ export default function Education({ idioma }: EducationProps) {
                                 onClick={() => setExpandedImage(item.imagem)}
                                 className="group flex-shrink-0 w-[520px] border border-[var(--foreground)] border-opacity-10 rounded-3xl overflow-hidden bg-black/5 dark:bg-white/5 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 cursor-pointer"
                             >
-                                <div className="relative w-full h-[300px] overflow-hidden">
+                                <div className="relative w-full h-[300px] overflow-hidden bg-gray-100 dark:bg-[#181818] flex items-center justify-center">
                                     <Image
                                         src={item.imagem}
                                         alt={item.titulo[idioma]}
                                         fill
                                         sizes="520px"
-                                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                        className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                                 </div>
 
                                 <div className="p-7 text-left">
