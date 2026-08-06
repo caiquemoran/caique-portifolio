@@ -114,11 +114,7 @@ export default function Projects({ idioma }: ProjectsProps) {
                                 key={index} 
                                 className="flex-shrink-0 w-[85vw] md:w-[calc(50%-2rem)] lg:w-[calc(50%-3rem)] max-w-[800px] bg-[#111111] border border-gray-800 rounded-3xl overflow-hidden snap-center flex flex-col text-left hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2"
                             >
-<<<<<<< HEAD
                                 <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-100 dark:bg-[#181818] relative overflow-hidden flex items-center justify-center">
-=======
-                                <div className="w-full h-[250px] md:h-[350px] lg:h-[400px] bg-gray-800 relative overflow-hidden flex items-center justify-center">
->>>>>>> a1de1adbab01eac7120e03499a307d8be6935be3
                                     {projeto.imagem ? (
                                         <Image 
                                             src={projeto.imagem} 
