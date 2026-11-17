@@ -33,17 +33,6 @@ const experiencias: Experiencia[] = [
         },
         tecnologias: ["Oracle SQL", "Protheus (ADVPL)", "Linux", "Git", "GitHub"],
     },
-    {
-        empresa: "Centro Oeste Indústria de Caixas de Papelão e Produtos Gráficos",
-        logo: "/co_logo.jpg",
-        cargo: { pt: "Desenvolvimento de Landing Page", en: "Landing Page Development" },
-        periodo: { pt: "Mar 2026 – Abr 2026", en: "Mar 2026 – Apr 2026" },
-        descricao: {
-            pt: "Desenvolvimento de Landing Page para a empresa.",
-            en: "Development of Landing Page for the company.",
-        },
-        tecnologias: ["React", "Next.JS", "Node.JS", "TypeScript", "Tailwind", "Git", "GitHub"],
-    },
 ];
 
 function getTecnologia(nome: string): TecnologiaItem | undefined {
